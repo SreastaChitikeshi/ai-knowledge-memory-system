@@ -1,0 +1,128 @@
+The AI Knowledge Memory System consists of multiple interconnected modules that work together to store and retrieve knowledge efficiently.
+
+1. Knowledge Input Module
+
+This module collects knowledge from users.
+
+Input types:
+
+Text notes
+
+Documents
+
+Study content
+
+Example:
+
+Topic: Machine Learning
+Content: Supervised learning uses labeled data for training.
+2. Text Processing Module
+
+The input text is cleaned and processed.
+
+Tasks:
+
+Remove noise
+
+Normalize text
+
+Extract meaningful tokens
+
+This prepares text for embedding generation.
+
+3. Embedding Generation Module
+
+This module converts processed text into numerical vectors using NLP models.
+
+Example transformation:
+
+Text → Embedding Vector
+
+These vectors capture the semantic meaning of the text.
+
+4. Vector Storage Module
+
+Embeddings are stored in a vector database.
+
+Database features:
+
+Fast similarity search
+
+Efficient indexing
+
+Scalable storage
+
+Example systems:
+
+FAISS
+
+Pinecone
+
+5. Query Processing Module
+
+When the user asks a question, the system processes the query.
+
+Steps:
+
+Clean query text
+
+Generate query embedding
+
+Compare with stored vectors
+
+6. Semantic Search Module
+
+The system performs similarity search between the query vector and stored embeddings.
+
+Similarity metric:
+
+Cosine Similarity
+
+The most similar knowledge entries are retrieved.
+
+7. Response Generation Module
+
+Retrieved knowledge is formatted into a response.
+
+Example output:
+
+You studied Neural Networks on March 5.
+
+Key concept:
+Backpropagation is used to update neural network weights using gradient descent.
+8. User Interface Module
+
+This module allows user interaction.
+
+Features:
+
+Add notes
+
+Ask questions
+
+View responses
+
+Tools used:
+
+Streamlit
+
+Flask
+
+System Flow
+User Input Knowledge
+        ↓
+Text Processing
+        ↓
+Embedding Generation
+        ↓
+Vector Database Storage
+        ↓
+User Query
+        ↓
+Query Embedding
+        ↓
+Semantic Similarity Search
+        ↓
+Knowledge Retrieval
+        ↓
+Response Display
